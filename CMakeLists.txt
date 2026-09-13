@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0)
+project(Linear_Equation_Systems)
+include_directories(inc)
+file(GLOB SOURCE "src/*.cpp" "inc/*.hh")
+add_executable(${PROJECT_NAME} ${SOURCE})
+target_link_libraries(${PROJECT_NAME} m)
